@@ -1,0 +1,43 @@
+:root{
+  --bg:#fbfaf7;--card:#ffffff;--ink:#1c1b19;--muted:#6b6860;--line:#e6e2d9;--accent:#1f5f8b;--on-accent:#ffffff;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#141413;--card:#1c1c1a;--ink:#ecebe6;--muted:#a3a19a;--line:#2e2d2a;--accent:#86b9de;--on-accent:#10202c}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+main,footer{max-width:680px;margin:0 auto;padding-left:24px;padding-right:24px}
+main{padding-top:80px;padding-bottom:16px}
+a{color:var(--accent);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+.hero{display:flex;align-items:center;gap:24px;margin-bottom:28px}
+.avatar{flex:none;width:88px;height:88px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font:600 26px/1 Georgia,serif;letter-spacing:.04em;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-weight:600;font-size:clamp(30px,6vw,40px);line-height:1.1;letter-spacing:-.01em;margin:0 0 6px}
+.tagline{margin:0;color:var(--muted);font-size:18px;line-height:1.45}
+
+.links{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 56px}
+.links a{display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-size:15px;text-decoration:none;transition:border-color .15s,color .15s}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+
+section{margin-bottom:48px}
+h2{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+p{margin:0 0 14px}
+
+.list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.list li{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.list .title{font-weight:600}
+.list .year{color:var(--muted);font-size:15px;font-variant-numeric:tabular-nums}
+.list .desc{grid-column:1/-1;margin:0;color:var(--muted);font-size:15px}
+
+footer{padding-bottom:56px;color:var(--muted);font-size:14px}
+
+@media (max-width:520px){
+  main,footer{padding-left:20px;padding-right:20px}
+  main{padding-top:48px}
+  .hero{flex-direction:column;align-items:flex-start;gap:16px}
+  .avatar{width:72px;height:72px;font-size:22px}
+}
