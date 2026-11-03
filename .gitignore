@@ -1,0 +1,5 @@
+# Unencrypted source pages: never publish these
+private/
+
+# Local preview settings
+.claude/
