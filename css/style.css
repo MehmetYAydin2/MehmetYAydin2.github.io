@@ -434,15 +434,15 @@ strong { font-weight: 700; color: var(--heading); }
 /* Company logo beside an experience entry */
 .exp {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
+  grid-template-columns: 128px minmax(0, 1fr);
   column-gap: 20px;
 }
 .exp > * { grid-column: 2; }
 .exp > .exp__logo {
   grid-column: 1;
   grid-row: 1 / span 3;
-  width: 96px;
-  height: 40px;
+  width: 128px;
+  height: 38px;
   object-fit: contain;
   object-position: left top;
 }
@@ -450,8 +450,8 @@ strong { font-weight: 700; color: var(--heading); }
 /* University logo in place of the school name */
 .edu__logo {
   display: block;
-  max-width: 210px;
-  max-height: 56px;
+  max-width: 170px;
+  max-height: 38px;
   width: auto;
   height: auto;
   margin-bottom: 6px;
