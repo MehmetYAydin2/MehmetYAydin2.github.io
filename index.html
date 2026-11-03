@@ -1,83 +1,508 @@
 <!doctype html>
-<!--
-  Starter page for mehmetyalcinaydin.com (GitHub Pages).
-
-  How to edit: search this file for "EDIT" and replace the placeholder
-  text and links. Colors and layout live in style.css. No build step needed.
-  To add a photo, upload photo.jpg next to this file and follow the
-  note in the "avatar" block below.
--->
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mehmet Yalçın Aydın</title>
-<!-- EDIT: one sentence that search engines and link previews show -->
-<meta name="description" content="Personal website of Mehmet Yalçın Aydın.">
-<link rel="canonical" href="https://mehmetyalcinaydin.com/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mehmetyalcinaydin.com/">
-<meta property="og:title" content="Mehmet Yalçın Aydın">
-<meta property="og:description" content="Personal website of Mehmet Yalçın Aydın.">
-<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5f8b'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-weight='600' fill='white'%3EM%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yalcin Aydin | McKinsey &amp; Company · Stanford MBA &amp; MS</title>
+  <meta name="description" content="Yalcin Aydin — Senior Associate Consultant at McKinsey & Company (Silicon Valley), Stanford MBA and MS in Environment and Resources, mechanical and industrial engineer, co-inventor and geologic-hydrogen researcher">
+  <link rel="canonical" href="https://mehmetyalcinaydin.com/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://mehmetyalcinaydin.com/">
+  <meta property="og:title" content="Yalcin Aydin | McKinsey & Company · Stanford MBA & MS">
+  <meta property="og:description" content="Engineer by training, strategist by trade, builder at heart: strategy, engineering and the energy transition">
+  <meta property="og:image" content="https://mehmetyalcinaydin.com/images/headshot.jpg">
+  <meta property="profile:first_name" content="Yalcin">
+  <meta property="profile:last_name" content="Aydin">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yalcin Aydin",
+    "alternateName": ["Yalçın Aydın", "Mehmet Yalçın Aydın", "Mehmet Yalcin Aydin", "Mehmet Y. Aydin"],
+    "url": "https://mehmetyalcinaydin.com/",
+    "image": "https://mehmetyalcinaydin.com/images/headshot.jpg",
+    "jobTitle": "Senior Associate Consultant",
+    "worksFor": { "@type": "Organization", "name": "McKinsey & Company", "url": "https://www.mckinsey.com/" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Stanford Graduate School of Business" },
+      { "@type": "CollegeOrUniversity", "name": "Stanford Doerr School of Sustainability" },
+      { "@type": "CollegeOrUniversity", "name": "University of Illinois Urbana-Champaign" },
+      { "@type": "CollegeOrUniversity", "name": "Koç University" }
+    ],
+    "knowsAbout": ["Geologic hydrogen", "Decarbonization strategy", "Energy transition", "Climate venture capital", "Microfluidic diagnostics", "Additive manufacturing"],
+    "sameAs": [
+      "https://www.linkedin.com/in/mehmetyalcinaydin",
+      "https://github.com/MehmetYAydin2"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<main>
-  <header class="hero">
-    <!-- EDIT (optional photo): upload photo.jpg, then replace "MYA" below with
-         <img src="photo.jpg" alt="Mehmet Yalçın Aydın"> -->
-    <div class="avatar" aria-hidden="true">MYA</div>
-    <div>
-      <h1>Mehmet Yalçın Aydın</h1>
-      <!-- EDIT: your role and where you work or study -->
-      <p class="tagline">Your role · Your organization</p>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- Header art: illustration of the Stanford GSB Wall of Change (images/wall-of-change.svg) -->
+  <header class="site-header site-header--wall">
+    <div class="site-header__bar">
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="/" aria-current="page">About Me</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>About Me</h1>
+      <p>Strategy · Engineering · Energy transition</p>
     </div>
   </header>
 
-  <!-- EDIT: replace each link with your own, and delete any you don't use -->
-  <ul class="links">
-    <li><a href="mailto:you@example.com">Email</a></li>
-    <li><a href="https://www.linkedin.com/in/your-handle">LinkedIn</a></li>
-    <li><a href="https://github.com/your-username">GitHub</a></li>
-    <li><a href="https://scholar.google.com/">Google Scholar</a></li>
-  </ul>
+  <main id="content" class="site-main">
+    <article class="page-card">
+      <nav class="jump-nav" aria-label="On this page">
+        <ul>
+          <li><a href="#current-work">Current Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#recognition">Recognition</a></li>
+          <li><a href="#beyond-work">Beyond Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-  <section aria-labelledby="about">
-    <h2 id="about">About</h2>
-    <!-- EDIT: two or three short paragraphs about you -->
-    <p>Write two or three sentences about who you are and what you work on. This is the first thing visitors read, so lead with the one thing you'd most like them to remember.</p>
-    <p>A second paragraph can cover your background, what you're focused on right now, or what kind of conversations you're open to.</p>
-  </section>
+      <div class="container">
 
-  <section aria-labelledby="work">
-    <h2 id="work">Selected work</h2>
-    <!-- EDIT: projects, papers, talks or roles. Copy a <li> block to add one.
-         To link a title, wrap it like this: <a class="title" href="https://...">Title</a> -->
-    <ul class="list">
-      <li>
-        <span class="title">Project, paper or role title</span>
-        <span class="year">2026</span>
-        <p class="desc">One line on what it is and why it matters.</p>
-      </li>
-      <li>
-        <span class="title">Another highlight</span>
-        <span class="year">2025</span>
-        <p class="desc">Keep each description to a single sentence.</p>
-      </li>
-      <li>
-        <span class="title">Something earlier</span>
-        <span class="year">2024</span>
-        <p class="desc">Three to five items is plenty for a homepage.</p>
-      </li>
-    </ul>
-  </section>
-</main>
+        <section class="section" aria-label="Quote">
+          <blockquote class="quote">
+            <p>"The best way ~ to predict the future ~ is to create it"</p>
+            <footer>- Peter Drucker, Management Consultant &amp; Guru</footer>
+          </blockquote>
+        </section>
 
-<footer>
-  <p>© 2026 Mehmet Yalçın Aydın</p>
-</footer>
+        <section class="section" aria-labelledby="roles-title">
+          <h2 id="roles-title" class="section-title section-title--feature">My Roles</h2>
+          <ul class="roles">
+            <li class="role">
+              <div class="role__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/><path d="M11 13v2h2v-2"/></svg>
+              </div>
+              <h3>Strategy Consultant</h3>
+              <p>Senior Associate Consultant at McKinsey &amp; Company, Silicon Valley; previously three years in Türkiye and Azerbaijan</p>
+            </li>
+            <li class="role">
+              <div class="role__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              </div>
+              <h3>Engineer &amp; Inventor</h3>
+              <p>Mechanical and industrial engineer, co-inventor on a U.S. patent, published on 3D-printed diagnostics and geologic hydrogen</p>
+            </li>
+            <li class="role">
+              <div class="role__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21.5h4"/><path d="M12 2.5a6.5 6.5 0 0 0-3.9 11.7c.6.5.9 1.2.9 2V18h6v-1.8c0-.8.3-1.5.9-2A6.5 6.5 0 0 0 12 2.5z"/></svg>
+              </div>
+              <h3>Entrepreneur</h3>
+              <p>Former CFO of Hydrify, a Stanford geologic-hydrogen venture; climate venture-capital fellow in Berlin and Palo Alto</p>
+            </li>
+            <li class="role">
+              <div class="role__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9.5 12 4.5 2 9.5l10 5 10-5z"/><path d="M6 11.5v5c3 2.2 9 2.2 12 0v-5"/><path d="M22 9.5v6"/></svg>
+              </div>
+              <h3>Educator</h3>
+              <p>Award-winning teaching assistant for sustainability and ecopreneurship courses at Stanford</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="bio-title">
+          <div class="bio">
+            <div class="bio__photo">
+              <img class="headshot" src="images/headshot.jpg" width="800" height="800" alt="Portrait of Yalcin Aydin">
+            </div>
+            <div class="bio__text">
+              <h2 id="bio-title" class="bio__name">Yalcin Aydin</h2>
+              <p class="bio__tagline">Senior Associate Consultant, McKinsey &amp; Company · Stanford MBA &amp; MS · Bay Area</p>
+
+              <p>I am a <strong>Senior Associate Consultant</strong> at McKinsey &amp; Company's Silicon Valley office and a graduate of Stanford's joint degree program, where I earned an <strong>MBA</strong> from the Graduate School of Business and an <strong>MS in Environment and Resources (E-IPER)</strong> from the Doerr School of Sustainability</p>
+
+              <p>I started out as an engineer. I graduated from Koç University as <strong>salutatorian</strong> with degrees in mechanical and industrial engineering. At the University of Illinois I was a product manager and research assistant in Prof. William P. King's lab, where I led the development of <a href="https://mechse.illinois.edu/news/portable-point-care-covid-19-test-could-bypass-lab">3D-printed portable COVID-19 test kits</a>. That work became a <strong>U.S. patent</strong> and papers in <em>PNAS</em> and <em>Analytical Chemistry</em></p>
+
+              <p>I then spent three years with McKinsey in Türkiye and Azerbaijan, where I co-designed <a href="https://www.mckinsey.com/capabilities/sustainability/our-insights/turkiyes-sustainability-transformation-the-net-zero-opportunity">Türkiye's first 30-year decarbonization roadmap</a> and helped solar, wind, and oil and gas clients improve their operations</p>
+
+              <p>At Stanford I went deep on the energy transition, especially <strong>geologic hydrogen</strong>. I co-authored a <a href="https://doi.org/10.1016/j.ijhydene.2025.150872">techno-economic analysis of natural and stimulated hydrogen</a>, wrote my capstone on the economics of natural hydrogen in California, and served as <strong>CFO of Hydrify</strong>, a Stanford startup using AI to locate hydrogen-rich rock formations and produce low-carbon hydrogen at $1/kg. Along the way I worked in climate venture capital in Berlin and Palo Alto, helped redefine Stanford's zero-waste goals as a Sustainability Fellow, and co-led the GSB Business &amp; Climate Club</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="current-work" aria-labelledby="work-title">
+          <h2 id="work-title" class="section-title">My Current Work</h2>
+          <div class="work-list">
+            <div class="work">
+              <p class="work__hook">Engineer by training, strategist by trade, builder at heart</p>
+              <p>I'm back at McKinsey, now in the heart of Silicon Valley, bringing a rare mix to every client: an engineer who took a COVID-19 test from lab prototype to U.S. patent, a consultant who co-designed a national net-zero roadmap, and an operator who has seen climate ventures from both sides of the table, as a startup CFO and as a venture-capital fellow</p>
+              <p>I am dedicated to continuing to work at the intersection of <strong>technology, strategy and sustainability</strong> to create the "future"</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="experience" aria-labelledby="exp-title">
+          <h2 id="exp-title" class="section-title">Experience</h2>
+          <ol class="timeline">
+            <li>
+              <div class="timeline__date">2026 – present</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/mckinsey.svg" alt="">
+                <h3>Senior Associate Consultant <span class="company">McKinsey &amp; Company</span></h3>
+                <span class="timeline__org">Silicon Valley (Bay Area) office</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2023 – 2025</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/hydrify.png" alt="">
+                <h3>Chief Financial Officer <span class="company">Hydrify</span></h3>
+                <span class="timeline__org">Stanford, CA</span>
+                <ul>
+                  <li>Geologic-hydrogen venture developing an AI algorithm to locate hydrogen-rich rock formations, targeting low-carbon hydrogen at $1/kg</li>
+                  <li>Team named a <a href="https://tomkat.stanford.edu/innovation-transfer/hydrify">TomKat Center Innovation Transfer grantee</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2024 – 2025</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/stanford-block-s.png" alt="">
+                <h3>Sustainability Fellow (Living Lab) <span class="company">Stanford University</span></h3>
+                <span class="timeline__org">Office of Sustainability</span>
+                <ul>
+                  <li>Helped redefine Stanford's zero-waste and zero-carbon goals through waste characterization studies, board-level interviews and stakeholder workshops</li>
+                  <li>Modelled how Stanford's waste stream will evolve over the next 15 years, including the impact of eliminating single-use disposables, as <a href="https://news.stanford.edu/stories/2025/05/dumpster-diving-campus-waste-management">featured in Stanford Report</a></li>
+                  <li>Work grounded in monthly dumpster audits: Stanford diverts 68% of its waste against a 90%+ goal, yet <a href="https://sustainable.stanford.edu/2026/03/05/digging-deep-into-dumpster-data/">nearly 75% of landfill-bound waste</a> could have been reused, recycled or composted, and food makes up over 40% of it (<a href="https://stanforddaily.com/2026/06/07/what-makes-a-sustainable-student/">Julie Muir, Stanford Daily</a>)</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">Summer 2025</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/gigascale.svg" alt="">
+                <h3>Venture Capital Investing Fellow <span class="company">Gigascale Capital</span></h3>
+                <span class="timeline__org">Palo Alto, CA</span>
+                <ul>
+                  <li>Developed an investment thesis on metal fuels and metal-air batteries through in-depth customer interviews, technology benchmarking and techno-economic analyses (TEAs) of commercialization potential</li>
+                  <li>Supported early-stage climate-tech investments with competitive landscape mapping, market sizing and technology assessments</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">Summer 2024</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/sbi-ventures.png" alt="">
+                <h3>Venture Capital Intern <span class="company">SBI Ventures Europe</span></h3>
+                <span class="timeline__org">Berlin, Germany</span>
+                <ul>
+                  <li>Built financial models and funding materials to support capital-raising and investment strategy</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2020 – 2023</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/mckinsey.svg" alt="">
+                <h3>Associate Consultant <span class="company">McKinsey &amp; Company</span></h3>
+                <span class="timeline__org">Türkiye &amp; Azerbaijan</span>
+                <ul>
+                  <li>Co-designed Türkiye's first 30-year decarbonization roadmap to reach net zero in a cost-optimal and equitable way, working with government, trade unions and industry associations across 50 subsectors and 160+ technologies</li>
+                  <li>Developed and ranked 600+ emission-reduction use cases across 75 sectors</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2018 – 2020</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/illinois-block-i.svg" alt="">
+                <h3>Product Manager &amp; Research Assistant <span class="company">University of Illinois</span></h3>
+                <span class="timeline__org">Nanoengineering Laboratory (Prof. William P. King)</span>
+                <ul>
+                  <li>Led the development, delivery and testing of 20+ prototypes of a portable COVID-19 test kit in three months, with university researchers, medical staff, and state and federal leaders</li>
+                  <li>Co-inventor on U.S. Patent 11,938,480 for a 3D-flow microfluidic diagnostic device</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2017 – 2018</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/koc.svg" alt="">
+                <h3>Project Manager <span class="company">Koç University &amp; Siemens</span></h3>
+                <span class="timeline__org">Collaboration project · Türkiye</span>
+                <ul>
+                  <li>Measured and mapped the carbon footprints of a Siemens factory and the university campus for the first time</li>
+                  <li>Developed six sustainability projects, from renewable energy to circular economy, to cut campus emissions and waste</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2017</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/pwc.svg" alt="">
+                <h3>Business Analyst Intern <span class="company">PwC Strategy&amp;</span></h3>
+                <span class="timeline__org">Türkiye</span>
+                <ul>
+                  <li>Analyzed the impact of global and local free trade agreements (FTAs) on the Turkish automotive industry and global sales</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2016</div>
+              <div class="exp">
+                <img class="exp__logo" src="images/logos/atolye.svg" alt="">
+                <h3>Strategist Intern <span class="company">Atölye Labs</span></h3>
+                <span class="timeline__org">Design thinking and innovation consultancy · Türkiye</span>
+                <ul>
+                  <li>Helped design and launch imece, Türkiye's largest social-entrepreneurship incubation program, which supported 43 social startups with 1,000+ hours of mentorship and invested in 10 of them</li>
+                  <li>Managed the first cohort of social-impact startups focused on affordable clean technologies and inclusive, quality education</li>
+                  <li>Facilitated design thinking workshops on sustainability, social responsibility and education</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" id="education" aria-labelledby="edu-title">
+          <h2 id="edu-title" class="section-title">Education</h2>
+          <div class="edu-list">
+            <div class="edu">
+              <div class="edu__years">2023 – 2025</div>
+              <div class="edu__school">
+                <h3><img class="edu__logo" src="images/logos/stanford-gsb.svg" alt="Stanford Graduate School of Business"></h3>
+              </div>
+              <div class="edu__detail">
+                <p>Master of Business Administration (MBA)</p>
+                <p>Certificate in Public Management and Social Innovation</p>
+                <p class="note">Miller Social Change Leadership Award</p>
+              </div>
+            </div>
+            <div class="edu">
+              <div class="edu__years">2023 – 2025</div>
+              <div class="edu__school">
+                <h3><img class="edu__logo" src="images/logos/stanford-doerr.png" alt="Stanford Doerr School of Sustainability"></h3>
+              </div>
+              <div class="edu__detail">
+                <p>Master of Science in Environment and Resources (E-IPER), Sustainable Energy Systems</p>
+                <p class="note">Capstone: <em>Demand and Supply Mapping and Economics of Natural Hydrogen in California</em></p>
+                <p class="note">Centennial Teaching Assistant Award</p>
+              </div>
+            </div>
+            <div class="edu">
+              <div class="edu__years">2018 – 2020</div>
+              <div class="edu__school">
+                <h3><img class="edu__logo" src="images/logos/illinois-wordmark.svg" alt="University of Illinois"></h3>
+                <span>Urbana-Champaign</span>
+              </div>
+              <div class="edu__detail">
+                <p>Master of Science in Mechanical Engineering</p>
+                <p class="note">GPA 4.00 / 4.00 · Gauthier Distinguished Honor (100%) Fellowship · DARPA research sponsorship</p>
+                <p class="note">Thesis: <em>Microfluidic diagnostics from continuous liquid interface production additive manufacturing</em> (advisor: Prof. William P. King)</p>
+              </div>
+            </div>
+            <div class="edu">
+              <div class="edu__years">2012 – 2017</div>
+              <div class="edu__school">
+                <h3><img class="edu__logo" src="images/logos/koc.svg" alt="Koç University"></h3>
+                <span>Istanbul, Türkiye</span>
+              </div>
+              <div class="edu__detail">
+                <p>Bachelor of Science in Mechanical Engineering &amp; Bachelor of Science in Industrial Engineering (double major)</p>
+                <p class="note">Salutatorian among 1,100+ graduates · GPA 4.00 / 4.00 · 100% High Honor Scholarship</p>
+                <p class="note">Exchange programs:</p>
+                <ul class="sub-list">
+                  <li>UC Berkeley, Mechanical Engineering (2015)</li>
+                  <li>Technical University of Munich, School of Management (2017)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="publications" aria-labelledby="research-title">
+          <h2 id="research-title" class="section-title">Patents &amp; Publications</h2>
+          <p class="pubs-summary"><strong>470+ citations</strong> across three peer-reviewed papers · Citation counts from <a href="https://openalex.org/">OpenAlex</a>, November 2026</p>
+          <ul class="pubs">
+            <li>
+              <a class="pub-title" href="https://experts.illinois.edu/en/publications/microfluidic-diagnostic-device-with-a-three-dimensional-3d-flow-a/">Microfluidic diagnostic device with a three-dimensional (3D) flow architecture</a>
+              <span class="pub-meta">King, Bashir, <strong>Aydin</strong>, Berger, Valera Cano · <em>U.S. Patent No. 11,938,480</em>, 2020</span>
+            </li>
+            <li>
+              <a class="pub-title" href="https://doi.org/10.1016/j.ijhydene.2025.150872">Techno-economic analysis of natural and stimulated geological hydrogen</a>
+              <span class="pub-meta">Mathur, Moise, <strong>Aydın</strong>, Mukerji · <em>International Journal of Hydrogen Energy</em>, 2025 <span class="cite">Cited by 32</span></span>
+            </li>
+            <li>
+              <a class="pub-title" href="https://doi.org/10.1021/acs.analchem.1c00654">Portable pathogen diagnostics using microfluidic cartridges made from continuous liquid interface production additive manufacturing</a>
+              <span class="pub-meta">Berger, <strong>Aydin</strong>, et al. · <em>Analytical Chemistry</em>, 2021 <span class="cite">Cited by 18</span></span>
+            </li>
+            <li>
+              <a class="pub-title" href="https://doi.org/10.1073/pnas.2014739117">Rapid isothermal amplification and portable detection system for SARS-CoV-2</a>
+              <span class="pub-meta">Ganguli, Mostafa, Berger, <strong>Aydin</strong>, et al. · <em>PNAS</em>, 2020 <span class="cite">Cited by 421</span></span>
+            </li>
+            <li>
+              <a class="pub-title" href="https://hdl.handle.net/2142/108723">Microfluidic diagnostics from continuous liquid interface production additive manufacturing</a>
+              <span class="pub-meta">MS thesis, University of Illinois Urbana-Champaign, 2020</span>
+            </li>
+            <li>
+              <a class="pub-title" href="https://mediaspace.illinois.edu/media/t/1_5eadgqk0">Who is Smarter? Topology Optimization of Heat Sinks</a>
+              <span class="pub-meta">Talk, <em>Research Live!</em>, University of Illinois, 2019</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" id="leadership" aria-labelledby="lead-title">
+          <h2 id="lead-title" class="section-title">Leadership &amp; Community</h2>
+          <ol class="timeline timeline--compact">
+            <li>
+              <div class="timeline__date">2024 – 2025</div>
+              <div>
+                <h3>Co-president <span class="company">GSB Business &amp; Climate Club</span></h3>
+                <span class="timeline__org">Stanford Graduate School of Business</span>
+                <p>Organized events such as the GSB Climate Conference and built career pathways into climate tech for members</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2022</div>
+              <div>
+                <h3>Moderator, "Technological Singularity" <span class="company">Global Relations Forum</span></h3>
+                <span class="timeline__org">Young Fellows program · Galatasaray University</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2016 – 2018</div>
+              <div>
+                <h3>Founder &amp; Director <span class="company">Tunnel X Makerspace</span></h3>
+                <span class="timeline__org">Koç University</span>
+                <p>Led a team of 10 to launch Türkiye's first student-run laboratory for entrepreneurial projects</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__date">2013 – present</div>
+              <div>
+                <h3>Member &amp; former Student Regional Chair of Europe <span class="company">ASME</span></h3>
+                <span class="timeline__org">American Society of Mechanical Engineers</span>
+                <p>Organized international competitions, conferences and networking events for engineering students</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" id="recognition" aria-labelledby="awards-title">
+          <h2 id="awards-title" class="section-title">Recognition</h2>
+          <h3 class="featured__title">Featured in</h3>
+          <ul class="featured">
+            <li><a href="https://news.stanford.edu/stories/2025/05/dumpster-diving-campus-waste-management" class="featured__item"><img src="images/logos/stanford-report.svg" alt="Stanford Report"></a></li>
+            <li><a href="https://www.mckinsey.com/capabilities/sustainability/our-insights/turkiyes-sustainability-transformation-the-net-zero-opportunity" class="featured__item"><img class="featured__img--tall" src="images/logos/mckinsey.svg" alt="McKinsey &amp; Company"></a></li>
+            <li><a href="https://doi.org/10.1073/pnas.2014739117" class="featured__item"><img src="images/logos/pnas.svg" alt="PNAS"></a></li>
+            <li><a href="https://tomkat.stanford.edu/innovation-transfer/hydrify" class="featured__item"><img class="featured__img--tall" src="images/logos/tomkat.jpg" alt="Stanford TomKat Center"></a></li>
+          </ul>
+          <h3 class="featured__title featured__title--awards">Awards &amp; honors</h3>
+          <ul class="awards">
+            <li>
+              <span class="year">2026</span>
+              <div><strong><a href="https://sustainability.stanford.edu/news/dean-tells-graduates-greatest-danger-standing-still">Centennial Teaching Assistant Award</a></strong><span class="org">Stanford Doerr School of Sustainability</span></div>
+            </li>
+            <li>
+              <span class="year">2025</span>
+              <div><strong><a href="https://www.gsb.stanford.edu/newsroom/school-news/center-social-innovation-honors-students-planning-impact-careers">Miller Social Change Leadership Award</a></strong><span class="org">Stanford Graduate School of Business</span></div>
+            </li>
+            <li>
+              <span class="year">2025</span>
+              <div><strong><a href="https://tomkat.stanford.edu/news/stanford-teams-move-emerging-sustainability-technologies-and-business-models-forward-tomkat">TomKat Innovation Transfer Grant</a></strong><span class="org">Hydrify team, Stanford TomKat Center</span></div>
+            </li>
+            <li>
+              <span class="year">2020</span>
+              <div><strong><a href="https://patents.google.com/patent/US11938480B2/en">U.S. Patent 11,938,480</a></strong><span class="org">Co-inventor, University of Illinois</span></div>
+            </li>
+            <li>
+              <span class="year">2018</span>
+              <div><strong>Gauthier Distinguished Honor Fellowship</strong><span class="org">University of Illinois Urbana-Champaign</span></div>
+            </li>
+            <li>
+              <span class="year">2018</span>
+              <div><strong>Hult Prize Regional Finalist</strong><span class="org">Social entrepreneurship competition</span></div>
+            </li>
+            <li>
+              <span class="year">2018</span>
+              <div><strong>Salutatorian, among 1,100+ graduates</strong><span class="org">Koç University</span></div>
+            </li>
+            <li>
+              <span class="year">2017</span>
+              <div><strong><a href="https://medium.com/imeceplatformu/imece-ile-university-innovation-fellows-yolculu%C4%9Fu-3-905f6c4bc42">University Innovation Fellow</a></strong><span class="org">Stanford d.school program in design thinking</span></div>
+            </li>
+            <li>
+              <span class="year">2017</span>
+              <div><strong>Global Finalist, 3M Invent a New Challenge</strong><span class="org">3M innovation competition</span></div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" id="beyond-work" aria-labelledby="beyond-title">
+          <h2 id="beyond-title" class="section-title">Beyond Work</h2>
+          <div class="skills">
+            <div>
+              <h3>Languages</h3>
+              <p>English (full professional) · German (working) · Turkish (native)</p>
+            </div>
+            <div>
+              <h3>Tools</h3>
+              <p>Excel · Python · Power BI · MATLAB · COMSOL · Siemens NX · Autodesk Fusion</p>
+            </div>
+            <div>
+              <h3>Interests</h3>
+              <p>Design thinking · 3D printing &amp; maker projects · Aikido · Worm composting · Home automation</p>
+            </div>
+          </div>
+          <p>I'm a maker and smart-home enthusiast, with over 200 connected devices tackling everyday challenges, like curtains that open when we wake up and lights that remind us to take our vitamins</p>
+        </section>
+
+        <section class="section" id="contact" aria-labelledby="contact-title">
+          <div class="cta">
+            <div>
+              <h3 id="contact-title">Let's connect</h3>
+              <p>Reach out on LinkedIn if you're into clean tech or sustainability transformation, or just want to geek out about the singularity, 3D printing, smart homes or, my favorite topic, geologic hydrogen</p>
+            </div>
+            <a class="button" href="https://www.linkedin.com/in/mehmetyalcinaydin">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM.5 8h4v16h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.37-3.9-2.37 0-2.73 1.85-2.73 3.77V24h-4V8z"/></svg>
+              Connect on LinkedIn
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="site-footer"></div>
+    <div class="site-info">
+      <div class="site-info__inner">
+        <nav class="footer-menu" aria-label="Footer">
+          <ul>
+            <li><a href="/">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+        <div class="site-info__right">
+          <span>© 2026 Yalcin Aydin</span>
+          <a class="social-chip" href="https://www.linkedin.com/in/mehmetyalcinaydin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM.5 8h4v16h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.37-3.9-2.37 0-2.73 1.85-2.73 3.77V24h-4V8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
