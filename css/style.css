@@ -450,8 +450,8 @@ strong { font-weight: 700; color: var(--heading); }
 /* University logo in place of the school name */
 .edu__logo {
   display: block;
-  max-width: 136px;
-  max-height: 30px;
+  max-width: 170px;
+  max-height: 38px;
   width: auto;
   height: auto;
   margin-bottom: 6px;
