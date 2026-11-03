@@ -36,6 +36,11 @@
   --font: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --content-width: 880px;
   --card-width: 1170px;
+
+  /* Shared grid for Experience and Education: date | logo | text */
+  --col-date: 120px;
+  --col-logo: 180px;
+  --col-gap: 24px;
 }
 
 *,
@@ -412,8 +417,8 @@ strong { font-weight: 700; color: var(--heading); }
 
 .timeline > li {
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: var(--col-date) minmax(0, 1fr);
+  gap: var(--col-gap);
 }
 
 .timeline__date {
@@ -434,24 +439,24 @@ strong { font-weight: 700; color: var(--heading); }
 /* Company logo beside an experience entry */
 .exp {
   display: grid;
-  grid-template-columns: 128px minmax(0, 1fr);
-  column-gap: 20px;
+  grid-template-columns: var(--col-logo) minmax(0, 1fr);
+  column-gap: var(--col-gap);
 }
 .exp > * { grid-column: 2; }
 .exp > .exp__logo {
   grid-column: 1;
   grid-row: 1 / span 3;
-  width: 128px;
-  height: 38px;
+  width: var(--col-logo);
+  height: 40px;
   object-fit: contain;
-  object-position: left top;
+  object-position: center top;
 }
 
 /* University logo in place of the school name */
 .edu__logo {
   display: block;
-  max-width: 170px;
-  max-height: 38px;
+  max-width: var(--col-logo);
+  max-height: 50px;
   width: auto;
   height: auto;
   margin-bottom: 6px;
@@ -473,20 +478,23 @@ strong { font-weight: 700; color: var(--heading); }
 
 .edu {
   display: grid;
-  grid-template-columns: 120px 240px minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: var(--col-date) var(--col-logo) minmax(0, 1fr);
+  gap: var(--col-gap);
   align-items: start;
 }
 
 .edu__years {
   color: var(--nav-teal);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   padding-top: 4px;
 }
 
-.edu__school h3 { font-size: 22px; font-weight: 600; margin-bottom: 2px; }
-.edu__school span { color: var(--muted); font-size: 16px; }
+/* Logos sit centred in their column, matching the Experience logos */
+.edu__school { text-align: center; }
+.edu__school h3 { font-size: 22px; font-weight: 600; margin: 0; line-height: 0; }
+.edu__school .edu__logo { margin: 0 auto; }
+.edu__school span { display: block; margin-top: 6px; color: var(--muted); font-size: 15px; }
 
 .edu__detail p { font-size: 17px; margin-bottom: 6px; }
 .edu__detail .note { font-size: 15px; color: var(--muted); }
@@ -646,8 +654,7 @@ strong { font-weight: 700; color: var(--heading); }
 
 @media (max-width: 960px) {
   .roles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 24px; }
-  .edu { grid-template-columns: 200px minmax(0, 1fr); }
-  .edu__years { grid-column: 1 / -1; padding-top: 0; }
+  :root { --col-date: 104px; --col-logo: 150px; --col-gap: 20px; }
 }
 
 @media (max-width: 760px) {
@@ -674,12 +681,14 @@ strong { font-weight: 700; color: var(--heading); }
   .bio__photo { max-width: 240px; }
 
   .edu { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .edu__school { text-align: left; }
+  .edu__school .edu__logo { max-width: 180px; max-height: 40px; margin: 0 0 2px; }
 
   .timeline > li { grid-template-columns: minmax(0, 1fr); gap: 4px; }
   .exp { grid-template-columns: minmax(0, 1fr); }
   .exp > *,
   .exp > .exp__logo { grid-column: 1; grid-row: auto; }
-  .exp > .exp__logo { width: auto; max-width: 140px; height: 30px; margin: 4px 0 8px; }
+  .exp > .exp__logo { width: auto; max-width: 140px; height: 30px; margin: 4px 0 8px; object-position: left top; }
 
   .skills { grid-template-columns: minmax(0, 1fr); gap: 20px; }
 
